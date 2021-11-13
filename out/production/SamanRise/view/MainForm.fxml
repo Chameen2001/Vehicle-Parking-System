@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="backgroundImg" stylesheets="@../css/styleSheet1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <left>
+      <VBox prefHeight="700.0" prefWidth="390.0" styleClass="leftPanel" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="390.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <JFXComboBox fx:id="vehicleCmb" focusColor="WHITE" focusTraversable="false" labelFloat="true" prefHeight="42.0" prefWidth="237.0" promptText="Select Vehicle No" styleClass="combo-box" unFocusColor="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="75.0" top="35.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="500.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="parkBtn" buttonType="RAISED" focusTraversable="false" onAction="#parkVehicleMeth" prefHeight="54.0" prefWidth="180.0" styleClass="parkVehicleBtn" text="Park Vehicle" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Barlow Condensed Medium" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="leaveBtn" buttonType="RAISED" focusTraversable="false" onAction="#leaveVehicleMeth" prefHeight="54.0" prefWidth="180.0" styleClass="leaveVehicleBtn" text="Leave" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Barlow Condensed Medium" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="20.0" top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="700.0" prefWidth="509.0" styleClass="rightPanel" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="198.0" prefWidth="509.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="watchCover" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="dateLabel" alignment="CENTER" focusTraversable="false" layoutX="111.0" layoutY="27.0" prefHeight="40.0" prefWidth="248.0" text="11:34:47" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="timeLabel" alignment="CENTER" focusTraversable="false" layoutX="115.0" layoutY="67.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="66.0" prefWidth="248.0" text="11:34:47" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="60.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="321.0" prefWidth="509.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Pane prefHeight="300.0" prefWidth="513.0">
+                     <children>
+                        <Line endX="-72.5" endY="220.0" layoutX="561.0" layoutY="40.0" startX="-72.5" startY="-1.0" />
+                        <Line endX="368.0" layoutX="121.0" layoutY="262.0" startX="-52.0" />
+                        <Line endX="-84.0" endY="90.0" layoutX="151.0" layoutY="41.0" startX="-84.0" />
+                        <Line endX="-84.0" endY="90.0" layoutX="152.0" layoutY="171.0" startX="-84.0" startY="9.0" />
+                        <Line endX="368.0" layoutX="120.0" layoutY="40.0" startX="-52.0" />
+                        <Pane layoutX="14.0" layoutY="205.0" prefHeight="48.0" prefWidth="50.0" style="-fx-background-color: #808e9b;">
+                           <children>
+                              <Label layoutX="3.0" layoutY="13.0" prefHeight="22.0" prefWidth="45.0" text="Office" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot8" disable="true" layoutX="79.0" layoutY="203.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" text="8">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot9" disable="true" layoutX="135.0" layoutY="203.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" text="9">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot10" disable="true" layoutX="195.0" layoutY="203.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="5.0" layoutY="9.0" text="10">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot11" disable="true" layoutX="256.0" layoutY="203.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="5.0" layoutY="9.0" text="11">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot12" disable="true" layoutX="316.0" layoutY="203.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="5.0" layoutY="9.0" text="12">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot13" disable="true" layoutX="374.0" layoutY="203.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="5.0" layoutY="9.0" text="13">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot14" disable="true" layoutX="433.0" layoutY="203.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="5.0" layoutY="9.0" text="14">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot1" disable="true" layoutX="79.0" layoutY="53.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" text="1">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot2" disable="true" layoutX="135.0" layoutY="53.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" text="2">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot3" disable="true" layoutX="195.0" layoutY="53.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="15.0" layoutY="9.0" text="3">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot4" disable="true" layoutX="256.0" layoutY="53.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" text="4">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot5" disable="true" layoutX="316.0" layoutY="53.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" text="5">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot6" disable="true" layoutX="374.0" layoutY="53.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" text="6">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="slot7" disable="true" layoutX="433.0" layoutY="53.0" opacity="0.16" prefHeight="52.0" prefWidth="45.0" style="-fx-background-color: #34e7e4;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" text="7">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="103.0" prefWidth="509.0">
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#managementLogInMeth" prefHeight="55.0" prefWidth="312.0" styleClass="managementLogInButton" text="Management LogIn">
+                     <font>
+                        <Font name="Barlow Condensed Medium" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="100.0" top="25.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="720.0" prefWidth="337.0" styleClass="centerPanel" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="20.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="201.0" prefWidth="341.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="typeCover" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="typeLabel" alignment="CENTER" focusTraversable="false" layoutX="22.0" layoutY="20.0" prefHeight="66.0" prefWidth="248.0" text="TYPE" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="47.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="49.0" layoutY="98.0" text="Your Vehicle Type" textFill="#00000091">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="31.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="179.0" prefWidth="341.0" VBox.vgrow="ALWAYS" />
+            <HBox prefHeight="201.0" prefWidth="341.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="slotCover" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="142.0" layoutY="100.0" radius="88.0" stroke="WHITE" strokeType="INSIDE" styleClass="slotLabel" />
+                        <Label fx:id="slotLabel" alignment="CENTER" focusTraversable="false" layoutX="84.0" layoutY="17.0" prefHeight="71.0" prefWidth="125.0" text="SLOT" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="71.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="101.0" text="Your Parking Slot" textFill="#00000091">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="31.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="100.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

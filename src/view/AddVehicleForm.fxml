@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="backgroundImg" stylesheets="@../css/styleSheet1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Pane layoutX="45.0" layoutY="35.0" prefHeight="530.0" prefWidth="711.0" styleClass="centerPanel">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Pane>
+      <Label layoutX="333.0" layoutY="56.0" text="Add Vehicle" textFill="#0000008b">
+         <font>
+            <Font name="Barlow Condensed Medium" size="33.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="vehicleNumberTxt" focusTraversable="false" labelFloat="true" layoutX="88.0" layoutY="178.0" prefHeight="26.0" prefWidth="253.0" promptText="Vehicle Number" styleClass="text-field" unFocusColor="WHITE" />
+      <JFXTextField fx:id="maximumWeightTxt" focusTraversable="false" labelFloat="true" layoutX="88.0" layoutY="266.0" promptText="Maximum Weight" styleClass="text-field" unFocusColor="WHITE" />
+      <JFXTextField fx:id="noOfPassengersTxt" focusTraversable="false" labelFloat="true" layoutX="88.0" layoutY="352.0" promptText="No Of Passengers" styleClass="text-field" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="vehicleTypeCmb" focusTraversable="false" labelFloat="true" layoutX="556.0" layoutY="178.0" prefHeight="26.0" prefWidth="155.0" promptText="Vehicle Type" styleClass="combo-box" unFocusColor="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="316.0" layoutY="487.0" onAction="#addVehicleMeth" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #27ae60;" styleClass="btn" text="Add Vehicle">
+         <font>
+            <Font name="Barlow Condensed Medium" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

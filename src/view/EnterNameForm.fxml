@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="nameContext" prefHeight="200.0" prefWidth="400.0" styleClass="backgroundImg" stylesheets="@../css/styleSheet1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EnterNameFormController">
+   <children>
+      <Pane layoutX="22.0" layoutY="10.0" prefHeight="180.0" prefWidth="357.0" styleClass="centerPanel">
+         <children>
+            <JFXComboBox fx:id="nameCmb" focusTraversable="false" layoutX="67.0" layoutY="70.0" prefHeight="40.0" prefWidth="224.0" promptText="Select Name" styleClass="combo-box" unFocusColor="WHITE" />
+         </children></Pane>
+      <Label alignment="CENTER" layoutX="113.0" layoutY="43.0" text="Enter Your Full Name">
+         <font>
+            <Font name="Barlow Condensed Medium" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="141.0" layoutY="149.0" onAction="#okMeth" prefHeight="31.0" prefWidth="118.0" style="-fx-background-color: #a29bfe;" styleClass="btn" text="Okey" />
+   </children>
+</AnchorPane>

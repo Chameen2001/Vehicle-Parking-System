@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="720.0" prefWidth="1280.0" styleClass="backgroundImg" stylesheets="@../css/styleSheet1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DataBaseTableFormController">
+    <center>
+        <VBox prefHeight="257.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="vehicleTbl" prefHeight="500.0" prefWidth="1044.0">
+                    <columns>
+                        <TableColumn fx:id="vehicleNumberClm" prefWidth="298.0" text="Vehicle Number" />
+                        <TableColumn fx:id="typeClm" prefWidth="204.0" text="Type" />
+                        <TableColumn fx:id="weightClm" prefWidth="310.0" text="Max Weight(KG)" />
+                        <TableColumn fx:id="noPassengerClm" prefWidth="231.0" text="Number Of Passengers" />
+                    </columns>
+                </TableView>
+                <Pane prefHeight="315.0" prefWidth="1044.0">
+                    <children>
+                        <Label layoutX="486.0" layoutY="21.0" text="Drivers" textFill="WHITE">
+                            <font>
+                                <Font name="Barlow Condensed Medium" size="29.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <TableView fx:id="driverTbl" prefHeight="500.0" prefWidth="1044.0">
+                    <columns>
+                        <TableColumn fx:id="nameClm" prefWidth="226.0" text="Name" />
+                        <TableColumn fx:id="nicClm" prefWidth="185.0" text="NIC" />
+                        <TableColumn fx:id="licenseClm" prefWidth="176.0" text="Driving License No" />
+                        <TableColumn fx:id="addressClm" prefWidth="301.0" text="Address" />
+                        <TableColumn fx:id="contactNoClm" prefWidth="155.0" text="Contact Number" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </center>
+    <top>
+        <Pane prefHeight="77.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="598.0" layoutY="20.0" text="Vehicles" textFill="WHITE">
+                    <font>
+                        <Font name="Barlow Condensed Medium" size="29.0" />
+                    </font>
+                </Label>
+                <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="18.0" onAction="#backMeth" prefHeight="41.0" prefWidth="107.0" style="-fx-background-color: #e17055;" styleClass="btn" text="Back">
+                    <font>
+                        <Font name="Barlow Condensed Medium" size="21.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+            </children>
+        </Pane>
+    </top>
+    <bottom>
+        <Pane prefHeight="36.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+    </bottom>
+    <left>
+        <Pane prefHeight="568.0" prefWidth="120.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Pane prefHeight="568.0" prefWidth="116.0" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>

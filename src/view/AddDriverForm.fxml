@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="backgroundImg" stylesheets="@../css/styleSheet1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Pane layoutX="53.0" layoutY="33.0" prefHeight="537.0" prefWidth="695.0" styleClass="centerPanel">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="460.0" onAction="#addDriverMeth" style="-fx-background-color: #2ecc71;" styleClass="btn" text="Add Driver">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Pane>
+      <Label layoutX="341.0" layoutY="57.0" text="Add Driver" textFill="#0000009d">
+         <font>
+            <Font name="Barlow Condensed Medium" size="33.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="driverNametxt" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="138.0" promptText="Driver Name" unFocusColor="WHITE" />
+      <JFXTextField fx:id="nicTxt" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="186.0" promptText="NIC" unFocusColor="WHITE" />
+      <JFXTextField fx:id="drivingLicenseNotxt" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="244.0" promptText="Driving License No" unFocusColor="WHITE" />
+      <JFXTextArea fx:id="addressTxt" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="301.0" prefHeight="58.0" prefWidth="419.0" promptText="Address" styleClass="text-field" unFocusColor="WHITE" />
+      <JFXTextField fx:id="contactNoTxt" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="404.0" promptText="Contact No" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

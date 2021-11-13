@@ -1,0 +1,80 @@
+.managementLogInButton{
+    -fx-background-radius: 30;
+    -fx-background-color: rgba(255,255,255,0.7);
+}
+.backgroundImg{
+        -fx-background-color: linear-gradient(from 50% 50% to 10% 10%, #2c3e50/*#00CFFF*/ , #7f8c8d /*#BB00FF*/);
+
+
+}
+
+.leftPanel{
+    -fx-background-color: rgba(127, 140, 141,0.5);
+    -fx-background-radius: 30;
+}
+.centerPanel{
+    -fx-background-color: rgba(127, 140, 141,0.5);
+    -fx-background-radius: 30;
+}
+.rightPanel{
+    -fx-background-color: rgba(127, 140, 141,0.5);
+    -fx-background-radius: 30;
+}
+.parkVehicleBtn{
+    -fx-background-color: rgba(52, 152, 219,1);
+    -fx-background-radius: 30;
+}
+.leaveVehicleBtn{
+    -fx-background-color: rgba(46, 204, 113,1);
+    -fx-background-radius: 30;
+}
+.comboCover{
+    
+    -fx-border-radius: 30;
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 30;
+}
+.combo-box{
+    -fx-prompt-text-fill: white;
+    -fx-font-family: "Barlow Condensed Medium";
+    -fx-font-size: 20;
+
+}
+.watchCover{
+    -fx-border-color: #433499;
+    -fx-border-radius: 60;
+    -fx-border-width: 2;
+    -fx-background-radius: 60;
+    -fx-background-color: rgba(255,255,255,0.2);
+}
+.typeCover{
+    -fx-border-color: #433499;
+    -fx-border-radius: 60;
+    -fx-border-width: 2;
+    -fx-background-radius: 60;
+    -fx-background-color: rgba(255,255,255,0.2);
+}
+
+.slotCover{
+    -fx-border-color: #433499;
+    -fx-border-radius: 60;
+    -fx-border-width: 2;
+    -fx-background-radius: 60;
+    /*-fx-background-color: rgba(255,255,255,0.2);*/
+    -fx-background-color:  rgba(255, 0, 0,0.7);
+}
+
+.slotLabel{
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+}
+
+.btn{
+    -fx-background-radius: 30;
+}
+
+.text-field{
+    -fx-prompt-text-fill: white;
+    -fx-font-family: "Barlow Condensed Medium";
+    -fx-font-size: 20;
+}

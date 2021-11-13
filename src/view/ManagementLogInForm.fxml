@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logInContext" prefHeight="400.0" prefWidth="600.0" styleClass="backgroundImg" stylesheets="@../css/styleSheet1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementLogInFormController">
+   <children>
+      <Pane layoutX="42.0" layoutY="22.0" prefHeight="356.0" prefWidth="516.0" styleClass="centerPanel">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Pane>
+      <JFXTextField fx:id="userNametxt" focusTraversable="false" labelFloat="true" layoutX="99.0" layoutY="160.0" prefHeight="39.0" prefWidth="403.0" promptText="User Name" styleClass="text-field" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="202.0" layoutY="75.0" text="Management LogIn" textFill="WHITE">
+         <font>
+            <Font name="Barlow Condensed Medium" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="327.0" layoutY="316.0" onAction="#logInMeth" prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #74b9ff;" styleClass="btn" text="LogIn">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="157.0" layoutY="316.0" onAction="#cancelMeth" prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #ff7675;" styleClass="btn" text="Cancel">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXPasswordField fx:id="passwordPwd" focusTraversable="false" labelFloat="true" layoutX="99.0" layoutY="228.0" prefHeight="39.0" prefWidth="403.0" promptText="Password" styleClass="text-field" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

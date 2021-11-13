@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="onDeliveryTableFormContext" prefHeight="509.0" prefWidth="1080.0" stylesheets="@../css/styleSheet1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDeliveryTableFormController">
+   <center>
+      <TableView fx:id="onDeliveryTable" prefHeight="200.0" prefWidth="200.0" styleClass="table" stylesheets="@../css/styleSheet1.css" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="vehicleNumberClm" prefWidth="219.0" text="Vehicle Number" />
+          <TableColumn fx:id="vehicleTypeClm" prefWidth="248.0" text="Vehicle Type" />
+            <TableColumn fx:id="driverNameClm" prefWidth="325.0" text="Driver Name" />
+            <TableColumn fx:id="leftTimeClm" prefWidth="287.0" text="Left Time" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
